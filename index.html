@@ -15,7 +15,11 @@
       name: '神箭手文档',
       subMaxLevel: 2,
       loadSidebar: true,
-      search: 'auto',
+      search: {
+        maxAge: 86400000,
+        placeholder: '请输入关键词',
+        paths: ['/']
+      },
     }
   </script>
   <!-- Docsify v4 -->
@@ -23,6 +27,6 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
